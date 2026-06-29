@@ -8,10 +8,9 @@
 </head>
 <body class="bg-stone-50 text-stone-900 font-sans antialiased">
 
-    <!-- HERO SECTION (Գլխավոր էջ՝ Քո ուղարկած օղակաձև ջրվեժով) -->
+    <!-- HERO SECTION -->
     <div class="relative h-screen w-full bg-cover bg-center bg-no-repeat" style="background-image: url('hero-bg.jpg');">
-        <!-- Նուրբ մուգ շերտ, որ տեքստը շքեղ երևա նկարի վրա -->
-        <div class="absolute inset-0 bg-stone-950/40"></div>
+        <div class="absolute inset-0 bg-stone-950/45"></div>
 
         <header class="absolute inset-x-0 top-0 z-50 flex items-center justify-between px-6 py-6 md:px-16">
             <div class="text-white text-2xl font-light tracking-widest">AQUA<span class="text-amber-600 font-semibold">ART</span></div>
@@ -31,7 +30,7 @@
                     Sculpted with Water & Steel
                 </h1>
                 <p class="text-base md:text-lg text-stone-200 font-light mb-10 max-w-xl mx-auto leading-relaxed">
-                    Architectural Corten steel statements designed to transform high-end modern sanctuaries.
+                    Architectural statements designed to transform high-end modern sanctuaries.
                 </p>
                 <a href="#collection" class="bg-amber-600 text-white px-10 py-4 rounded-none hover:bg-amber-700 transition font-medium uppercase tracking-widest text-xs shadow-lg">
                     Explore the Collection
@@ -55,9 +54,9 @@
                 </p>
             </div>
             <div class="bg-white p-8 shadow-sm border border-stone-200">
-                <h3 class="text-xl font-medium text-stone-700 mb-3">Stainless Steel (Premium Grade)</h3>
+                <h3 class="text-xl font-medium text-stone-700 mb-3">Stainless Steel & Cast Stone</h3>
                 <p class="text-stone-600 font-light leading-relaxed">
-                    Polished or brushed finishes that beautifully reflect natural light and surrounding greenery, perfect for minimalist landscape concepts.
+                    Polished finishes and architectural concrete variants that beautifully reflect natural light, perfect for minimalist and luxury landscape concepts.
                 </p>
             </div>
         </div>
@@ -65,22 +64,70 @@
 
     <!-- PRODUCT COLLECTION -->
     <section id="collection" class="py-20 px-6 md:px-16 max-w-7xl mx-auto">
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-4 border-b border-stone-200">
-            <div>
-                <span class="text-xs text-amber-600 font-bold uppercase tracking-widest">Product Showcase</span>
-                <h2 class="text-2xl md:text-3xl font-light uppercase tracking-wider mt-1">Signature Models</h2>
-            </div>
+        <!-- Օրիգինալ Անունը Մեջտեղում -->
+        <div class="text-center mb-20">
+            <span class="text-xs text-amber-600 font-bold uppercase tracking-[0.3em]">Signature Line</span>
+            <h2 class="text-4xl md:text-5xl font-extralight uppercase tracking-[0.2em] mt-2 text-stone-800">ELEMENTS</h2>
+            <div class="w-12 h-0.5 bg-amber-600 mx-auto mt-4"></div>
         </div>
 
-        <p class="text-stone-500 font-light text-center py-8">
-            [Սպասում եմ մյուս ապրանքների նկարներին՝ կատալոգը թարմացնելու համար]
-        </p>
+        <!-- 3 Գլխավոր Ապրանքների Grid -->
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+            
+            <!-- Model 1 -->
+            <div class="bg-white border border-stone-200 overflow-hidden flex flex-col justify-between group shadow-sm hover:shadow-md transition">
+                <div class="h-80 overflow-hidden bg-stone-100">
+                    <img src="prod-1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Oasis Waterfall Wall">
+                </div>
+                <div class="p-6">
+                    <span class="text-[11px] text-stone-400 font-mono">COLLECTION: ELEMENTS</span>
+                    <h3 class="text-lg font-light tracking-wide mt-0.5 mb-3 text-stone-800">Oasis Waterfall Wall</h3>
+                    <p class="text-xs text-stone-500 font-light leading-relaxed">Integrated sheer descent sheet waterfall designed for modern pool settings and feature walls.</p>
+                </div>
+            </div>
+
+            <!-- Model 2 -->
+            <div class="bg-white border border-stone-200 overflow-hidden flex flex-col justify-between group shadow-sm hover:shadow-md transition">
+                <div class="h-80 overflow-hidden bg-stone-100">
+                    <img src="prod-2.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Corten Circular Ring">
+                </div>
+                <div class="p-6">
+                    <span class="text-[11px] text-stone-400 font-mono">COLLECTION: ELEMENTS</span>
+                    <h3 class="text-lg font-light tracking-wide mt-0.5 mb-3 text-stone-800">Corten Circular Ring</h3>
+                    <p class="text-xs text-stone-500 font-light leading-relaxed">A striking geometric focal point with a continuous interior water curtain and a pebble-bed basin.</p>
+                </div>
+            </div>
+
+            <!-- Model 3 -->
+            <div class="bg-white border border-stone-200 overflow-hidden flex flex-col justify-between group shadow-sm hover:shadow-md transition">
+                <div class="h-80 overflow-hidden bg-stone-100">
+                    <img src="prod-3.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Minimalist Cast Basin">
+                </div>
+                <div class="p-6">
+                    <span class="text-[11px] text-stone-400 font-mono">COLLECTION: ELEMENTS</span>
+                    <h3 class="text-lg font-light tracking-wide mt-0.5 mb-3 text-stone-800">Minimalist Cast Basin</h3>
+                    <p class="text-xs text-stone-500 font-light leading-relaxed">A compact architectural model featuring integrated LED lighting and a smooth overflowing cascade.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Մեծ Կատալոգի Բաժին (Full Width Catalog Sheet) -->
+        <div class="mt-20 border-t border-stone-200 pt-16">
+            <div class="max-w-3xl mx-auto text-center mb-10">
+                <h3 class="text-2xl font-light uppercase tracking-widest text-stone-800">Custom Architectural Sculpture Series</h3>
+                <p class="text-stone-500 font-light text-sm mt-2">Explore our extensive range of geometric structural fountains tailored for custom bespoke projects.</p>
+            </div>
+            <div class="bg-white p-4 border border-stone-200 shadow-sm max-w-4xl mx-auto">
+                <img src="prod-4.jpg" class="w-full h-auto" alt="Full Sculptural Catalog">
+            </div>
+        </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-stone-900 text-stone-500 py-8 px-6 text-center text-xs tracking-wider">
+    <footer class="bg-stone-900 text-stone-500 py-12 px-6 text-center text-xs tracking-wider">
         <p class="text-stone-400 mb-1">AQUAART LANDSCAPE ARCHITECTURE</p>
-        <p>&copy; 2026 Interactive Concept Catalog.</p>
+        <p>&copy; 2026 Interactive Concept Catalog. Prepared by Tsiala Yeghiazaryan.</p>
     </footer>
 
 </body>
