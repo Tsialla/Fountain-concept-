@@ -4,47 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AquaArt | Premium Architectural Water Features</title>
-    <!-- Tailwind CSS-ի միացում արագ դիզայնի համար -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-stone-50 text-stone-900 font-sans antialiased">
 
-    <!-- 1. HERO SECTION (Գլխավոր բլոկ՝ Frame Fountain նկարով) -->
-    <div class="relative h-screen w-full bg-cover bg-center" style="background-image: url('hero-bg.png');">
-        <!-- Մուգ շերտ նկարի վրա, որպեսզի տեքստը հստակ կարդացվի -->
-        <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative h-screen w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1584467541268-b040f83be3fd?auto=format&fit=crop&w=1920&q=80');">
+        <div class="absolute inset-0 bg-black/45"></div>
 
-        <!-- Մենյու (Header) -->
-        <header class="absolute inset-x-0 top-0 z-50 flex items-center justify-between px-8 py-6 md:px-16">
-            <div class="text-white text-2xl font-bold tracking-wider">AQUA<span class="text-amber-600">ART</span></div>
-            <nav class="hidden md:flex space-x-8 text-white/90 font-medium">
-                <a href="#" class="hover:text-amber-500 transition">Collections</a>
-                <a href="#" class="hover:text-amber-500 transition">Materials</a>
-                <a href="#" class="hover:text-amber-500 transition">Our Story</a>
-                <a href="#" class="hover:text-amber-500 transition">Contact</a>
+        <header class="absolute inset-x-0 top-0 z-50 flex items-center justify-between px-6 py-6 md:px-16">
+            <div class="text-white text-2xl font-light tracking-widest">AQUA<span class="text-amber-600 font-semibold">ART</span></div>
+            <nav class="hidden md:flex space-x-10 text-white/95 text-sm uppercase tracking-widest font-medium">
+                <a href="#collections" class="hover:text-amber-500 transition">Collections</a>
+                <a href="#materials" class="hover:text-amber-500 transition">Materials</a>
+                <a href="#catalog" class="hover:text-amber-500 transition">Technical Data</a>
             </nav>
-            <button class="border border-white text-white px-5 py-2 rounded-sm hover:bg-white hover:text-black transition font-medium">
+            <button class="border border-white/70 text-white text-xs uppercase tracking-widest px-6 py-2.5 rounded-none hover:bg-white hover:text-black transition font-medium">
                 Inquire Now
             </button>
         </header>
 
-        <!-- Գլխավոր Տեքստը Էկրանի Մեջտեղում -->
         <div class="relative z-10 flex h-full items-center justify-center text-center px-4">
-            <div class="max-w-3xl">
-                <h1 class="text-4xl md:text-6xl font-light tracking-wide text-white mb-6">
+            <div class="max-w-4xl">
+                <h1 class="text-4xl md:text-7xl font-extralight tracking-wide text-white mb-6 uppercase">
                     Bring the Elements to Life
                 </h1>
-                <p class="text-lg md:text-xl text-white/80 font-light mb-8 max-w-2xl mx-auto leading-relaxed">
-                    Architectural water features crafted from Corten and Stainless Steel. Designed to transform your garden into a modern sanctuary.
+                <p class="text-lg md:text-xl text-stone-200 font-light mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Architectural water features crafted from premium Corten and Stainless Steel. Designed to transform your landscape into a modern sanctuary.
                 </p>
-                <a href="#collections" class="bg-amber-600 text-white px-8 py-3.5 rounded-sm hover:bg-amber-700 transition font-medium uppercase tracking-wider text-sm">
+                <a href="#collections" class="bg-amber-600 text-white px-10 py-4 rounded-none hover:bg-amber-700 transition font-medium uppercase tracking-widest text-xs shadow-lg">
                     Explore the Collection
                 </a>
             </div>
         </div>
     </div>
 
-    <!-- Ասա երբ պատրաստ լինես, որ հաջորդ՝ ապրանքների բաժինն էլ ավելացնենք այստեղ -->
+    <section id="materials" class="py-20 px-6 md:px-16 bg-stone-100">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-3xl font-light tracking-widest uppercase mb-4">Masterpiece Materials</h2>
+            <div class="w-16 h-0.5 bg-amber-600 mx-auto"></div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+            <div class="bg-white p-8 shadow-sm border border-stone-200">
+                <h3 class="text-xl font-medium text-amber-800 mb-3">Corten Steel (Weathering Steel)</h3>
+                <p class="text-stone-600 font-light leading-relaxed">
+                    A modern design favorite. This material naturally develops a protective, warm rust-colored patina over time. It requires zero maintenance and offers exceptional durability against all weather conditions.
+                </p>
+            </div>
+            <div class="bg-white p-8 shadow-sm border border-stone-200">
+                <h3 class="text-xl font-medium text-stone-700 mb-3">Stainless Steel (Premium Grade)</h3>
+                <p class="text-stone-600 font-light leading-relaxed">
+                    Polished, brushed, or mirrored finishes that beautifully reflect natural light and surrounding greenery. Perfect for high-end, minimalist, and ultra-modern landscape designs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="collections" class="py-20 px-6 md:px-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-light tracking-widest uppercase mb-4">Architectural Models</h2>
+                <p class="text-stone-500 font-light">Select from our signature geometric and organic water concepts</p>
+                <div class="w-16 h-0.5 bg-amber-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-20">
+                
+                <div class="bg-white border border-stone-200 overflow-hidden group">
+                    <div class="h-72 overflow-hidden bg-stone-100">
+                        <img src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Sphere Fountain">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-amber-600 font-medium tracking-widest uppercase">Model: GN-WF-006</span>
+                        <h3 class="text-xl font-light tracking-wide mt-1 mb-4">Sphere Water Fountain</h3>
+                        <div class="border-t border-stone-100 pt-4 text-xs text-stone-500 font-light space-y-1">
+                            <p><strong>Diameter:</strong> 800 mm / 1000 mm</p>
+                            <p><strong>Material options:</strong> Corten / Stainless Steel</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-stone-200 overflow-hidden group">
+                    <div class="h-72 overflow-hidden bg-stone-100">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Spiral Fountain">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-amber-600 font-medium tracking-widest uppercase">Model: GN-WF-066</span>
+                        <h3 class="text-xl font-light tracking-wide mt-1 mb-4">Crescent Spiral Fountain</h3>
+                        <div class="border-t border-stone-100 pt-4 text-xs text-stone-500 font-light space-y-1">
+                            <p><strong>Width / Height:</strong> 800 mm x 1000 mm</p>
+                            <p><strong>Includes:</strong> Certified water pump & kit</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-stone-200 overflow-hidden group">
+                    <div class="h-72 overflow-hidden bg-stone-100">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd95cb22904?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Cube Fountain">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-amber-600 font-medium tracking-widest uppercase">Model: GN-WF-210</span>
+                        <h3 class="text-xl font-light tracking-wide mt-1 mb-4">Block Cube Oasis</h3>
+                        <div class="border-t border-stone-100 pt-4 text-xs text-stone-500 font-light space-y-1">
+                            <p><strong>Dimensions:</strong> 1100 mm x 1000 mm</p>
+                            <p><strong>Finish:</strong> Rust Corten / Painted Steel</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-400 py-12 px-6 md:px-16 text-center text-sm font-light tracking-wider">
+        <p class="text-white mb-2">AQUAART LANDSCAPE FEATURES</p>
+        <p>&copy; 2026 Concept Portfolio. Built with passion for architectural design.</p>
+    </footer>
 
 </body>
 </html>
