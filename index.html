@@ -4,56 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AquaArt | Premium Landscape Water Features</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-stone-50 text-stone-900 font-sans antialiased">
+<body class="bg-gray-50 text-gray-900 font-sans">
 
-    <div class="relative h-screen w-full bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd95cb22904?auto=format&fit=crop&w=1920&q=80');">
-        <div class="absolute inset-0 bg-stone-950/40"></div>
+    <div class="relative h-screen w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd95cb22904?auto=format&fit=crop&w=1920&q=80');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
         <header class="absolute inset-x-0 top-0 z-50 flex items-center justify-between px-6 py-6 md:px-16">
-            <div class="text-white text-2xl font-light tracking-widest">AQUA<span class="text-amber-600 font-semibold">ART</span></div>
-            <nav class="hidden md:flex space-x-10 text-white/95 text-xs uppercase tracking-widest font-semibold">
-                <a href="#collection" class="hover:text-amber-500 transition">The Collection</a>
-                <a href="#materials" class="hover:text-amber-500 transition">Materials</a>
+            <div class="text-white text-2xl font-light tracking-widest">AQUA<span class="text-yellow-600 font-semibold">ART</span></div>
+            <nav class="hidden md:flex space-x-10 text-white text-xs uppercase tracking-widest font-semibold">
+                <a href="#collection" class="hover:text-yellow-500 transition">The Collection</a>
+                <a href="#materials" class="hover:text-yellow-500 transition">Materials</a>
             </nav>
-            <button class="border border-white/50 text-white text-xs uppercase tracking-widest px-5 py-2 hover:bg-white hover:text-stone-900 transition font-medium">
+            <button class="border border-white border-opacity-50 text-white text-xs uppercase tracking-widest px-5 py-2 hover:bg-white hover:text-gray-900 transition font-medium">
                 Request Quote
             </button>
         </header>
 
         <div class="relative z-10 flex h-full items-center justify-center text-center px-4">
             <div class="max-w-4xl">
-                <span class="text-amber-500 text-xs font-bold tracking-widest uppercase block mb-4">Premium Landscape Features</span>
-                <h1 class="text-4xl md:text-7xl font-extralight tracking-wide text-white mb-6 uppercase leading-tight">
+                <span class="text-yellow-500 text-xs font-bold tracking-widest uppercase block mb-4">Premium Landscape Features</span>
+                <h1 class="text-4xl md:text-7xl font-light tracking-wide text-white mb-6 uppercase">
                     Sculpted with Water & Steel
                 </h1>
-                <p class="text-base md:text-lg text-stone-200 font-light mb-10 max-w-xl mx-auto leading-relaxed">
+                <p class="text-base md:text-lg text-gray-200 font-light mb-10 max-w-xl mx-auto">
                     Architectural statements designed to transform high-end modern sanctuaries.
                 </p>
-                <a href="#collection" class="bg-amber-600 text-white px-10 py-4 rounded-none hover:bg-amber-700 transition font-medium uppercase tracking-widest text-xs shadow-lg">
+                <a href="#collection" class="bg-yellow-600 text-white px-10 py-4 hover:bg-yellow-700 transition font-medium uppercase tracking-widest text-xs">
                     Explore the Collection
                 </a>
             </div>
         </div>
     </div>
 
-    <section id="materials" class="py-20 px-6 md:px-16 bg-stone-100">
+    <section id="materials" class="py-20 px-6 md:px-16 bg-gray-100">
         <div class="max-w-7xl mx-auto text-center mb-16">
             <h2 class="text-3xl font-light tracking-widest uppercase mb-4">Masterpiece Materials</h2>
-            <div class="w-16 h-0.5 bg-amber-600 mx-auto"></div>
+            <div class="w-16 h-0.5 bg-yellow-600 mx-auto"></div>
         </div>
         
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-            <div class="bg-white p-8 shadow-sm border border-stone-200">
-                <h3 class="text-xl font-medium text-amber-800 mb-3">Corten Steel (Weathering Steel)</h3>
-                <p class="text-stone-600 font-light leading-relaxed">
+            <div class="bg-white p-8 shadow-sm border border-gray-200">
+                <h3 class="text-xl font-medium text-yellow-800 mb-3">Corten Steel (Weathering Steel)</h3>
+                <p class="text-gray-600 font-light leading-relaxed">
                     A modern design favorite. This material naturally develops a protective, warm rust-colored patina over time, offering exceptional durability with zero maintenance.
                 </p>
             </div>
-            <div class="bg-white p-8 shadow-sm border border-stone-200">
-                <h3 class="text-xl font-medium text-stone-700 mb-3">Stainless Steel & Cast Stone</h3>
-                <p class="text-stone-600 font-light leading-relaxed">
+            <div class="bg-white p-8 shadow-sm border border-gray-200">
+                <h3 class="text-xl font-medium text-gray-700 mb-3">Stainless Steel & Cast Stone</h3>
+                <p class="text-gray-600 font-light leading-relaxed">
                     Polished finishes and architectural concrete variants that beautifully reflect natural light, perfect for minimalist and luxury landscape concepts.
                 </p>
             </div>
@@ -62,51 +62,43 @@
 
     <section id="collection" class="py-20 px-6 md:px-16 max-w-7xl mx-auto">
         <div class="text-center mb-20">
-            <span class="text-xs text-amber-600 font-bold uppercase tracking-[0.3em]">Signature Line</span>
-            <h2 class="text-4xl md:text-5xl font-extralight uppercase tracking-[0.2em] mt-2 text-stone-800">ELEMENTS</h2>
-            <div class="w-12 h-0.5 bg-amber-600 mx-auto mt-4"></div>
+            <span class="text-xs text-yellow-600 font-bold uppercase tracking-[0.3em]">Signature Line</span>
+            <h2 class="text-4xl md:text-5xl font-light uppercase tracking-[0.2em] mt-2 text-gray-800">ELEMENTS</h2>
+            <div class="w-12 h-0.5 bg-yellow-600 mx-auto mt-4"></div>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8 mb-16">
-            
-            <div class="bg-white border border-stone-200 overflow-hidden flex flex-col justify-between group shadow-sm hover:shadow-md transition">
-                <div class="h-80 overflow-hidden bg-stone-100">
-                    <img src="https://images.unsplash.com/photo-1584467541268-b040f83be3fd?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Oasis Waterfall Wall">
-                </div>
+            <div class="bg-white border border-gray-200 overflow-hidden flex flex-col justify-between shadow-sm">
+                <img src="https://images.unsplash.com/photo-1584467541268-b040f83be3fd?auto=format&fit=crop&w=600&q=80" class="w-full h-80 object-cover" alt="Oasis Waterfall Wall">
                 <div class="p-6">
-                    <span class="text-[11px] text-stone-400 font-mono">COLLECTION: ELEMENTS</span>
-                    <h3 class="text-lg font-light tracking-wide mt-0.5 mb-3 text-stone-800">Oasis Waterfall Wall</h3>
-                    <p class="text-xs text-stone-500 font-light leading-relaxed">Integrated sheer descent sheet waterfall designed for modern pool settings and feature walls.</p>
+                    <span class="text-xs text-gray-400 font-mono">COLLECTION: ELEMENTS</span>
+                    <h3 class="text-lg font-light tracking-wide mt-1 mb-3 text-gray-800">Oasis Waterfall Wall</h3>
+                    <p class="text-xs text-gray-500 font-light">Integrated sheer descent sheet waterfall designed for modern pool settings and feature walls.</p>
                 </div>
             </div>
 
-            <div class="bg-white border border-stone-200 overflow-hidden flex flex-col justify-between group shadow-sm hover:shadow-md transition">
-                <div class="h-80 overflow-hidden bg-stone-100">
-                    <img src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Corten Circular Ring">
-                </div>
+            <div class="bg-white border border-gray-200 overflow-hidden flex flex-col justify-between shadow-sm">
+                <img src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=600&q=80" class="w-full h-80 object-cover" alt="Corten Circular Ring">
                 <div class="p-6">
-                    <span class="text-[11px] text-stone-400 font-mono">COLLECTION: ELEMENTS</span>
-                    <h3 class="text-lg font-light tracking-wide mt-0.5 mb-3 text-stone-800">Corten Circular Ring</h3>
-                    <p class="text-xs text-stone-500 font-light leading-relaxed">A striking geometric focal point with a continuous interior water curtain and a pebble-bed basin.</p>
+                    <span class="text-xs text-gray-400 font-mono">COLLECTION: ELEMENTS</span>
+                    <h3 class="text-lg font-light tracking-wide mt-1 mb-3 text-gray-800">Corten Circular Ring</h3>
+                    <p class="text-xs text-gray-500 font-light">A striking geometric focal point with a continuous interior water curtain and a pebble-bed basin.</p>
                 </div>
             </div>
 
-            <div class="bg-white border border-stone-200 overflow-hidden flex flex-col justify-between group shadow-sm hover:shadow-md transition">
-                <div class="h-80 overflow-hidden bg-stone-100">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Minimalist Cast Basin">
-                </div>
+            <div class="bg-white border border-gray-200 overflow-hidden flex flex-col justify-between shadow-sm">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" class="w-full h-80 object-cover" alt="Minimalist Cast Basin">
                 <div class="p-6">
-                    <span class="text-[11px] text-stone-400 font-mono">COLLECTION: ELEMENTS</span>
-                    <h3 class="text-lg font-light tracking-wide mt-0.5 mb-3 text-stone-800">Minimalist Cast Basin</h3>
-                    <p class="text-xs text-stone-500 font-light leading-relaxed">A compact architectural model featuring integrated LED lighting and a smooth overflowing cascade.</p>
+                    <span class="text-xs text-gray-400 font-mono">COLLECTION: ELEMENTS</span>
+                    <h3 class="text-lg font-light tracking-wide mt-1 mb-3 text-gray-800">Minimalist Cast Basin</h3>
+                    <p class="text-xs text-gray-500 font-light">A compact architectural model featuring integrated LED lighting and a smooth overflowing cascade.</p>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <footer class="bg-stone-900 text-stone-500 py-12 px-6 text-center text-xs tracking-wider">
-        <p class="text-stone-400 mb-1">AQUAART LANDSCAPE ARCHITECTURE</p>
+    <footer class="bg-gray-900 text-gray-500 py-12 px-6 text-center text-xs tracking-wider">
+        <p class="text-gray-400 mb-1">AQUAART LANDSCAPE ARCHITECTURE</p>
         <p>&copy; 2026 Interactive Concept Catalog. Prepared by Tsiala Yeghiazaryan.</p>
     </footer>
 
