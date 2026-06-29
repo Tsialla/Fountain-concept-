@@ -8,15 +8,16 @@
 </head>
 <body class="bg-stone-50 text-stone-900 font-sans antialiased">
 
-    <!-- HERO SECTION -->
-    <div class="relative h-[85vh] w-full bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd95cb22904?auto=format&fit=crop&w=1920&q=80');">
-        <div class="absolute inset-0 bg-stone-900/40"></div>
+    <!-- HERO SECTION (Գլխավոր էջ՝ Քո ուղարկած օղակաձև ջրվեժով) -->
+    <div class="relative h-screen w-full bg-cover bg-center bg-no-repeat" style="background-image: url('hero-bg.jpg');">
+        <!-- Նուրբ մուգ շերտ, որ տեքստը շքեղ երևա նկարի վրա -->
+        <div class="absolute inset-0 bg-stone-950/40"></div>
 
         <header class="absolute inset-x-0 top-0 z-50 flex items-center justify-between px-6 py-6 md:px-16">
             <div class="text-white text-2xl font-light tracking-widest">AQUA<span class="text-amber-600 font-semibold">ART</span></div>
             <nav class="hidden md:flex space-x-10 text-white/95 text-xs uppercase tracking-widest font-semibold">
                 <a href="#collection" class="hover:text-amber-500 transition">The Collection</a>
-                <a href="#specs" class="hover:text-amber-500 transition">Specifications</a>
+                <a href="#materials" class="hover:text-amber-500 transition">Materials</a>
             </nav>
             <button class="border border-white/50 text-white text-xs uppercase tracking-widest px-5 py-2 hover:bg-white hover:text-stone-900 transition font-medium">
                 Request Quote
@@ -24,17 +25,43 @@
         </header>
 
         <div class="relative z-10 flex h-full items-center justify-center text-center px-4">
-            <div class="max-w-3xl">
-                <span class="text-amber-500 text-xs font-semibold tracking-widest uppercase block mb-3">Architectural Elements</span>
-                <h1 class="text-4xl md:text-6xl font-extralight tracking-wide text-white mb-6 uppercase">
+            <div class="max-w-4xl">
+                <span class="text-amber-500 text-xs font-bold tracking-widest uppercase block mb-4">Premium Landscape Features</span>
+                <h1 class="text-4xl md:text-7xl font-extralight tracking-wide text-white mb-6 uppercase leading-tight">
                     Sculpted with Water & Steel
                 </h1>
-                <p class="text-base md:text-lg text-stone-200 font-light mb-8 max-w-xl mx-auto leading-relaxed">
-                    Premium Corten steel features designed for high-end architectural landscapes.
+                <p class="text-base md:text-lg text-stone-200 font-light mb-10 max-w-xl mx-auto leading-relaxed">
+                    Architectural Corten steel statements designed to transform high-end modern sanctuaries.
                 </p>
+                <a href="#collection" class="bg-amber-600 text-white px-10 py-4 rounded-none hover:bg-amber-700 transition font-medium uppercase tracking-widest text-xs shadow-lg">
+                    Explore the Collection
+                </a>
             </div>
         </div>
     </div>
+
+    <!-- MATERIALS SECTION -->
+    <section id="materials" class="py-20 px-6 md:px-16 bg-stone-100">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-3xl font-light tracking-widest uppercase mb-4">Masterpiece Materials</h2>
+            <div class="w-16 h-0.5 bg-amber-600 mx-auto"></div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+            <div class="bg-white p-8 shadow-sm border border-stone-200">
+                <h3 class="text-xl font-medium text-amber-800 mb-3">Corten Steel (Weathering Steel)</h3>
+                <p class="text-stone-600 font-light leading-relaxed">
+                    A modern design favorite. This material naturally develops a protective, warm rust-colored patina over time, offering exceptional durability with zero maintenance.
+                </p>
+            </div>
+            <div class="bg-white p-8 shadow-sm border border-stone-200">
+                <h3 class="text-xl font-medium text-stone-700 mb-3">Stainless Steel (Premium Grade)</h3>
+                <p class="text-stone-600 font-light leading-relaxed">
+                    Polished or brushed finishes that beautifully reflect natural light and surrounding greenery, perfect for minimalist landscape concepts.
+                </p>
+            </div>
+        </div>
+    </section>
 
     <!-- PRODUCT COLLECTION -->
     <section id="collection" class="py-20 px-6 md:px-16 max-w-7xl mx-auto">
@@ -43,106 +70,17 @@
                 <span class="text-xs text-amber-600 font-bold uppercase tracking-widest">Product Showcase</span>
                 <h2 class="text-2xl md:text-3xl font-light uppercase tracking-wider mt-1">Signature Models</h2>
             </div>
-            <p class="text-stone-500 font-light text-sm max-w-md mt-4 md:mt-0">
-                Available in weathering Corten Steel, elegant Painted Black, and polished Stainless Steel.
-            </p>
         </div>
 
-        <!-- Grid -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            
-            <!-- Model 1: GN-WF-088 -->
-            <div class="bg-white border border-stone-200 overflow-hidden flex flex-col justify-between group shadow-sm hover:shadow-md transition">
-                <div class="h-64 overflow-hidden bg-stone-100 relative">
-                    <img src="https://images.unsplash.com/photo-1584467541268-b040f83be3fd?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Waterfall Wall">
-                    <span class="absolute top-3 left-3 bg-red-600 text-white text-[10px] font-bold uppercase px-2 py-0.5 tracking-wider">Hot</span>
-                </div>
-                <div class="p-5">
-                    <span class="text-[11px] text-stone-400 font-mono">CODE: GN-WF-088</span>
-                    <h3 class="text-lg font-normal tracking-tight mt-0.5 mb-3 text-stone-800">Waterfall Feature</h3>
-                    
-                    <!-- Materials Swatches -->
-                    <div class="flex space-x-2 mb-4">
-                        <span class="w-4 h-4 rounded-full bg-amber-700 block border border-stone-300" title="Corten Steel"></span>
-                        <span class="w-4 h-4 rounded-full bg-stone-800 block border border-stone-300" title="Painted Steel"></span>
-                        <span class="w-4 h-4 rounded-full bg-stone-300 block border border-stone-300" title="Stainless Steel"></span>
-                    </div>
-                    
-                    <div class="border-t border-stone-100 pt-3 text-xs text-stone-500 space-y-1 font-light">
-                        <p><strong>Width:</strong> 1500 mm</p>
-                        <p><strong>Height:</strong> 2000 mm</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Model 2: GN-SF-104 -->
-            <div class="bg-white border border-stone-200 overflow-hidden flex flex-col justify-between group shadow-sm hover:shadow-md transition">
-                <div class="h-64 overflow-hidden bg-stone-100">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Water Fountain">
-                </div>
-                <div class="p-5">
-                    <span class="text-[11px] text-stone-400 font-mono">CODE: GN-SF-104</span>
-                    <h3 class="text-lg font-normal tracking-tight mt-0.5 mb-3 text-stone-800">Square Water Oasis</h3>
-                    
-                    <div class="flex space-x-2 mb-4">
-                        <span class="w-4 h-4 rounded-full bg-amber-700 block border border-stone-300"></span>
-                    </div>
-                    
-                    <div class="border-t border-stone-100 pt-3 text-xs text-stone-500 space-y-1 font-light">
-                        <p><strong>Type:</strong> Low-profile Square Basin</p>
-                        <p><strong>Material:</strong> Heavy-duty Corten</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Model 3: GN-SF-210 -->
-            <div class="bg-white border border-stone-200 overflow-hidden flex flex-col justify-between group shadow-sm hover:shadow-md transition">
-                <div class="h-64 overflow-hidden bg-stone-100">
-                    <img src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Ring Fountain">
-                </div>
-                <div class="p-5">
-                    <span class="text-[11px] text-stone-400 font-mono">CODE: GN-SF-210</span>
-                    <h3 class="text-lg font-normal tracking-tight mt-0.5 mb-3 text-stone-800">Circular Ring Fountain</h3>
-                    
-                    <div class="flex space-x-2 mb-4">
-                        <span class="w-4 h-4 rounded-full bg-amber-700 block border border-stone-300"></span>
-                        <span class="w-4 h-4 rounded-full bg-stone-800 block border border-stone-300"></span>
-                    </div>
-                    
-                    <div class="border-t border-stone-100 pt-3 text-xs text-stone-500 space-y-1 font-light">
-                        <p><strong>Design:</strong> Geometric O-Ring</p>
-                        <p><strong>Flow:</strong> Internal smooth cascade</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Model 4: GN-WF-099 -->
-            <div class="bg-white border border-stone-200 overflow-hidden flex flex-col justify-between group shadow-sm hover:shadow-md transition">
-                <div class="h-64 overflow-hidden bg-stone-100">
-                    <img src="https://images.unsplash.com/photo-1548946526-f69e2424cf45?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Arch Fountain">
-                </div>
-                <div class="p-5">
-                    <span class="text-[11px] text-stone-400 font-mono">CODE: GN-WF-099</span>
-                    <h3 class="text-lg font-normal tracking-tight mt-0.5 mb-3 text-stone-800">Square Arch Column</h3>
-                    
-                    <div class="flex space-x-2 mb-4">
-                        <span class="w-4 h-4 rounded-full bg-amber-700 block border border-stone-300"></span>
-                    </div>
-                    
-                    <div class="border-t border-stone-100 pt-3 text-xs text-stone-500 space-y-1 font-light">
-                        <p><strong>Structure:</strong> C-Shaped Arch</p>
-                        <p><strong>Application:</strong> Modern Gardens</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        <p class="text-stone-500 font-light text-center py-8">
+            [Սպասում եմ մյուս ապրանքների նկարներին՝ կատալոգը թարմացնելու համար]
+        </p>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-stone-900 text-stone-500 py-8 px-6 text-center text-xs tracking-wider border-t border-stone-800">
+    <footer class="bg-stone-900 text-stone-500 py-8 px-6 text-center text-xs tracking-wider">
         <p class="text-stone-400 mb-1">AQUAART LANDSCAPE ARCHITECTURE</p>
-        <p>&copy; 2026 Interactive Concept Catalog. Prepared for client review.</p>
+        <p>&copy; 2026 Interactive Concept Catalog.</p>
     </footer>
 
 </body>
